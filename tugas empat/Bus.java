@@ -1,4 +1,4 @@
-package praktic.inheritance.transportation; // Menentukan package tempat kelas Bus berada
+package praktic.inheritance.transportation; 
 
 public class Bus extends Vehicle { // Mendeklarasikan kelas Bus yang merupakan turunan dari Vehicle
     public static final int FARE_PER_STOP = 2000; // Konstanta tarif per halte
