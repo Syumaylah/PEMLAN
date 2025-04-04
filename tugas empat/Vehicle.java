@@ -1,4 +1,4 @@
-package praktic.inheritance.transportation; // Menentukan package tempat kelas Vehicle berada
+package praktic.inheritance.transportation; 
 
 public class Vehicle { // Mendeklarasikan kelas Vehicle sebagai kelas induk
     protected String name; // Nama kendaraan
