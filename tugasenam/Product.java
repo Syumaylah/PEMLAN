@@ -1,43 +1,42 @@
-package Marketplace; // Package tempat class Product berada
+package Marketplace; // package tempat class product berada
 
-// Kelas generik Product, bisa pakai kategori tipe apapun asal Comparable
-public class Product<T extends Comparable<T>> implements Comparable<Product<T>> {
-    private int id; // Variabel buat simpan ID produk
-    private String name; // Variabel buat nama produk
-    private T category; // Variabel buat kategori (tipe generic)
-    private double price; // Variabel buat harga produk
+public class Product<T extends Comparable<T>> implements Comparable<Product<T>> { // class generik product dengan tipe kategori yang bisa dibandingkan
+    private int id; // variabel untuk menyimpan id produk
+    private String name; // variabel untuk menyimpan nama produk
+    private T category; // variabel untuk menyimpan kategori produk (generic)
+    private double price; // variabel untuk menyimpan harga produk
 
-    // Konstruktor buat isi semua data produk
+    // konstruktor untuk mengisi data produk saat dibuat
     public Product(int id, String name, T category, double price) {
-        this.id = id; // Simpan ID produk
-        this.name = name; // Simpan nama produk
-        this.category = category; // Simpan kategori produk
-        this.price = price; // Simpan harga produk
+        this.id = id; // simpan id produk
+        this.name = name; // simpan nama produk
+        this.category = category; // simpan kategori produk
+        this.price = price; // simpan harga produk
     }
 
-    public int getId() { // Getter buat ambil ID produk
-        return id; // Balikin nilai ID
+    public int getId() { // getter untuk mengambil id produk
+        return id; // kembalikan nilai id
     }
 
-    public String getName() { // Getter buat ambil nama produk
-        return name; // Balikin nama
+    public String getName() { // getter untuk mengambil nama produk
+        return name; // kembalikan nama produk
     }
 
-    public T getCategory() { // Getter buat ambil kategori
-        return category; // Balikin kategori
+    public T getCategory() { // getter untuk mengambil kategori produk
+        return category; // kembalikan kategori
     }
 
-    public double getPrice() { // Getter buat ambil harga produk
-        return price; // Balikin harga
-    }
-
-    @Override
-    public String toString() { // Override toString buat cetak produk
-        return "ID: " + id + ", Nama: " + name + ", Kategori: " + category + ", Harga: Rp" + String.format("%,.2f", price); // Format tampilan
+    public double getPrice() { // getter untuk mengambil harga produk
+        return price; // kembalikan harga
     }
 
     @Override
-    public int compareTo(Product<T> other) { // Override method compareTo buat sorting
-        return this.category.compareTo(other.category); // Bandingkan kategori antar produk
+    public String toString() { // method untuk menampilkan info produk
+        return "ID: " + id + ", Nama: " + name + ", Kategori: " + category + ", Harga: Rp" + String.format("%,.2f", price); // tampilkan semua info produk
+    }
+
+    @Override
+    public int compareTo(Product<T> other) { // method pembanding untuk sorting
+        return this.category.compareTo(other.category); // bandingkan berdasarkan kategori
     }
 }
