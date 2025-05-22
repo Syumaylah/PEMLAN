@@ -12,7 +12,7 @@ public class tugas { // untuk mendefinisikan class utama, namanya diganti biar n
     }
 
     public static void main(String[] args) { // method utama untuk menjalankan program
-        Scanner p = new Scanner(System.in); // untuk membuat objek Scanner agar bisa ambil input dari user
+        Scanner p = new Scanner(System.in); // untuk membuat objek p agar bisa ambil input dari user
 
         try { // untuk mencoba menjalankan blok kode yang bisa menyebabkan error
             System.out.print("Masukkan umur kamu: "); // untuk menampilkan permintaan input umur ke user
