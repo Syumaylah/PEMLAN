@@ -1,7 +1,7 @@
 package uap.models;
 
 import uap.bases.Shape; // import kelas Shape
-import uap.interfaces.*; // impoert semua kelas yang ada di folder interfaces
+import uap.interfaces.*; // import semua kelas yang ada di folder interfaces
 
 public class Sphere extends Shape implements ThreeDimensional, PiRequired, MassCalculable, MassConverter, ShippingCostCalculator { // kelas sphere
     private double radius; // variabel radius
