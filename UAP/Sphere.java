@@ -22,7 +22,7 @@ public class Sphere extends Shape implements ThreeDimensional, PiRequired, MassC
     } 
 
     public double getMass() { // method hitung massa
-        return THICKNESS * getSurfaceArea() * DENSITY; // rumus massa : ketebalan * A * t
+        return THICKNESS * getSurfaceArea() * DENSITY; // rumus massa : ketebalan*A*t
     } 
 
     public void printInfo() { // method cetak info
