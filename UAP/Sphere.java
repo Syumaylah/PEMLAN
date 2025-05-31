@@ -30,7 +30,7 @@ public class Sphere extends Shape implements ThreeDimensional, PiRequired, MassC
         System.out.printf("Luas permukaan  : %.2f\n", getSurfaceArea()); // cetak luas
         System.out.printf("Massa           : %.2f\n", getMass()); // cetak massa
         System.out.printf("Massa dalam kg  : %.2f\n", gramToKilogram()); // cetak massa kg
-        System.out.printf("Biaya kirim     : Rp%.0f\n", calculateCost()); // cetak biaya
+        System.out.printf("Biaya kirim     : Rp %.0f\n", calculateCost()); // cetak biaya
     } // akhir method
 
     public double gramToKilogram() { // method konversi satuan
