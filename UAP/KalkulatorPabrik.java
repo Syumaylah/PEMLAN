@@ -10,8 +10,8 @@ public class KalkulatorPabrik {  // kelas utama program
 
         System.out.println("=============================================");  // garis pemisah
         System.out.println("Kalkulator Pabrik Cetakan Donat Rumahan");  // judul program
-        System.out.println("SYUMAYLAH");  // nama pembuat
-        System.out.println("245150707111036");  // NIM pembuat
+        System.out.println("SYUMAYLAH");  // nama 
+        System.out.println("245150707111036");  // NIM 
         System.out.println("=============================================");  // garis pemisah
         System.out.println("Donat dengan lubang");  // subjudul
         System.out.println("=============================================");  // garis pemisah
