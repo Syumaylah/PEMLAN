@@ -13,16 +13,16 @@ public class Sphere extends Shape implements ThreeDimensional, PiRequired, MassC
     } 
 
     public double getVolume() { // method hitung volume
-        return (4.0 / 3.0) * PI * radius * radius * radius; // rumus volume bola
+        return (4.0 / 3.0) * PI * radius * radius * radius; // rumus volume bola : (4/3)*pi*r³
     } 
 
     public double getSurfaceArea() { // method hitung luas permukaan
-        return 4 * PI * radius * radius; // rumus luas permukaan bola
+        return 4 * PI * radius * radius; // rumus luas permukaan bola : 4*pi*r²
 
     } 
 
     public double getMass() { // method hitung massa
-        return THICKNESS * getSurfaceArea() * DENSITY; // rumus massa
+        return THICKNESS * getSurfaceArea() * DENSITY; // rumus massa : ketebalan * A * t
     } 
 
     public void printInfo() { // method cetak info
@@ -34,7 +34,7 @@ public class Sphere extends Shape implements ThreeDimensional, PiRequired, MassC
     } // akhir method
 
     public double gramToKilogram() { // method konversi satuan
-        return getMass() / DENOMINATOR; // gram ke kilogram
+        return getMass() / DENOMINATOR; // konversi gram ke kilogram dengan membagi 1000
     } 
 
     public double calculateCost() { // method hitung biaya
