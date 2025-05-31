@@ -1,7 +1,7 @@
 package uap.models;
 
-import uap.bases.Shape;
-import uap.interfaces.*;
+import uap.bases.Shape; // import kelas Shape
+import uap.interfaces.*; // import semua kelas yang ada di folder interfaces
 
 public class Torus extends Shape implements ThreeDimensional, PiRequired, MassCalculable, MassConverter, ShippingCostCalculator { // kelas torus
     private double majorRadius; // variabel radius major
