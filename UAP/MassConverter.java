@@ -1,7 +1,7 @@
 package uap.interfaces;
 
-public interface MassConverter {
-    int DENOMINATOR = 1000;
+public interface MassConverter {  // interface untuk konversi massa
+    int DENOMINATOR = 1000;  // konstanta pembagi gram ke kilogram
 
-    double gramToKilogram();
+    double gramToKilogram();  // method konversi satuan
 }
