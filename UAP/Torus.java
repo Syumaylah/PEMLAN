@@ -31,7 +31,7 @@ public class Torus extends Shape implements ThreeDimensional, PiRequired, MassCa
         System.out.printf("Luas permukaan  : %.2f\n", getSurfaceArea()); // cetak luas
         System.out.printf("Massa           : %.2f\n", getMass()); // cetak massa
         System.out.printf("Massa dalam kg  : %.2f\n", gramToKilogram()); // cetak kg
-        System.out.printf("Biaya kirim     : Rp%.0f\n", calculateCost()); // cetak biaya
+        System.out.printf("Biaya kirim     : Rp %.0f\n", calculateCost()); // cetak biaya
     } 
 
     public double gramToKilogram() { // method konversi
