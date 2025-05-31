@@ -15,23 +15,15 @@ public class Torus extends Shape implements ThreeDimensional, PiRequired, MassCa
     } 
 
     public double getVolume() { // method volume
-        return 2 * PI * PI * majorRadius * minorRadius * minorRadius; // rumus volume torus 
+        return 2 * PI * PI * majorRadius * minorRadius * minorRadius; // rumus volume torus : 2*pi²*R*r²
     } 
 
     public double getSurfaceArea() { // method luas permukaan
-        return 4 * PI * PI * majorRadius * minorRadius; // rumus luas permukaan torus
+        return 4 * PI * PI * majorRadius * minorRadius; // rumus luas permukaan torus : 4*pi²*R*r
     } 
 
     public double getMass() { // method massa
-        return THICKNESS * getSurfaceArea() * DENSITY; // rumus massa torus
-    } 
-
-    public double gramToKilogram() { // method konversi
-        return getMass() / DENOMINATOR; // gram ke kilogram
-    } 
-
-    public double calculateCost() { // method biaya
-        return Math.ceil(gramToKilogram()) * PRICE_PER_KG; // hitung biaya kirim
+        return THICKNESS * getSurfaceArea() * DENSITY; // rumus massa torus : ketebalan*A*t
     } 
 
     public void printInfo() { // method cetak info
@@ -41,4 +33,13 @@ public class Torus extends Shape implements ThreeDimensional, PiRequired, MassCa
         System.out.printf("Massa dalam kg  : %.2f\n", gramToKilogram()); // cetak kg
         System.out.printf("Biaya kirim     : Rp%.0f\n", calculateCost()); // cetak biaya
     } 
+
+    public double gramToKilogram() { // method konversi
+        return getMass() / DENOMINATOR; // konversi gram ke kilogram dengan membagi 1000
+    } 
+
+    public double calculateCost() { // method biaya
+        return Math.ceil(gramToKilogram()) * PRICE_PER_KG; // hitung biaya kirim
+    } 
+
 }
